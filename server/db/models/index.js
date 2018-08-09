@@ -1,5 +1,6 @@
 const User = require('./user')
 const Messages = require('./messages')
+const pentaCounter = require('../../messagecounter/pentacounter')
 
 /**
  * If we had any associations to make, this would be a great place to put them!
@@ -16,5 +17,6 @@ const Messages = require('./messages')
  */
 module.exports = {
   User,
-  Messages
+  Messages,
+  pentaCounter
 }
