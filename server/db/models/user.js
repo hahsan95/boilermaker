@@ -31,7 +31,7 @@ const User = db.define('user', {
     type: Sequelize.STRING
   },
   groupmeId: {
-    type: Sequelize.INTEGER
+    type: Sequelize.STRING
   }
 })
 

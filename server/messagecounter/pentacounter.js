@@ -46,4 +46,4 @@ let getMessages = async () => {
   await getRestOfMessages()
 }
 
-getMessages()
+// getMessages()
