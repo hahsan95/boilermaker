@@ -10,6 +10,15 @@ class AllPentas extends Component {
     }
   }
 
+  render(){
+    if(this.props.pentasList.length > 0) {
+      console.log(this.props.pentasList[0].content)
+    }
+    return(
+      <div>Hello</div>
+    )
+  }
+
 }
 
 const mapStateToProps = (store) => {
