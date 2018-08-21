@@ -10,9 +10,10 @@ router.get('/', async (req, res, next) => {
   try {
     let allMessages = await Messages.findAll({
       where: {
-        likers: {
-          [Op.contains]: ["13997014", "15930778", "21812426", "4935400", "12326399"]
-        }
+        userId: '4935400'
+        // likers: {
+        //   [Op.contains]: ["13997014", "15930778", "21812426", "4935400", "12326399"]
+        // }
       }
     })
     res.json(allMessages)
