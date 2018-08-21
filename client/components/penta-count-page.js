@@ -26,6 +26,7 @@ class AllPentas extends Component {
     console.log(homumList.length, likeCount)
     return(
       <div>
+        <div style={{width:'500px'}}>
         <VictoryChart polar
         theme={VictoryTheme.material}
         >
@@ -44,10 +45,11 @@ class AllPentas extends Component {
             ]}
             // labels={(datum) => datum.x}
     style={{
-      data: { fill: "#c43a31" },
+      data: { fill: "#c43a31" }
     }}
   />
 </VictoryChart>
+</div>
 <VictoryChart>
   <VictoryArea
     data={[
